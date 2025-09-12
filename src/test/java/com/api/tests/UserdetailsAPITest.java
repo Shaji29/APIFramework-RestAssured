@@ -26,8 +26,7 @@ public class UserdetailsAPITest {
 	.time(lessThan(1000L))
 	.log().all()
 	.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("JSONschema/FDUserDetails.json"))
-	.extract().response()
-	;
+	.extract().response();
 	
 
 
